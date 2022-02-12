@@ -14,7 +14,43 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <div class="container active">
+        <header>
+            <button id="add" title="Add new note">
+                <i class="fa-regular fa-plus"></i>
+            </button>
+            <h1>Notes</h1>
+            <div class="buttons">
+                <button id="remove-note" title="Delete note">
+                    <i class="fa-regular fa-trash"></i>
+                </button>
+                <button id="save" title="Save note">
+                    <i class="fa-regular fa-save"></i>
+                </button>
+            </div>
+        </header>
+        <aside>
+            <span id="toggle">
+                <i class="fa-regular fa-angle-left"></i>
+            </span>
+            <div class="search">
+                <i class="fa-regular fa-search"></i>
+                <input type="text" id="search" placeholder="Search">
+            </div>
+            <ul id="notes-list">
+
+            </ul>
+        </aside>
+        <main>
+            <div class="note-input" id="noteinput">
+                <input type="text" id="note-title" placeholder="New note"><br>
+                <textarea id="note-content" placeholder="Enter note content"></textarea>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- <header>
         <h1>Notes</h1>
     </header>
     <form>
@@ -24,8 +60,8 @@
         </button>
     </form>
     <div class="notes-container">
-
-    </div>
+        
+    </div> -->
     <script src="./js/main.js"></script>
 </body>
 </html>
